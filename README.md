@@ -28,7 +28,23 @@ If you want to specify that a condition should not be met, prefix it with an exc
 !has_compound_leaves:goto:4
 ```
 
-To see an example of this, look at `writing.dck`, which is a dichotomous key setup to classify different writing utensils.
+If you want to create a condition that is always met, use the special condition `*`. Since conditions are evaluated in order, put this at the end of the step, or any conditions after it will not be evaluated.
+
+```
+; This condition is always true
+*:result:Homo sapiens
+```
+
+If you want to specify a result as indeterminate, i.e. no classification is possible, use the special result `indet`
+
+```
+; If the object does not have eyes, we don't know what it is
+!has_eyes:result:indet
+```
+
+By default, if no condition is true for an object in a step, the result `indet` is returned. 
+
+To see an example of a key file, look at `writing.dck`, which is a dichotomous key setup to classify different writing utensils.
 
 Once you have your key file, you have to create a list of objects. This is similar in setup to the key file.
 
