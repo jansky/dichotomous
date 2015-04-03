@@ -1,0 +1,21 @@
+Object 1
+uses_ink
+!uses_wax
+%%
+Object 2
+uses_wax
+%%
+Object 3
+uses_wax
+%%
+Object 4
+uses_lead
+%%
+Object 5
+uses_ink
+has_cover
+has_clip_on_cover
+%%
+Object 6
+uses_ink
+has_cover

@@ -1,0 +1,16 @@
+; ink or no ink
+uses_ink:goto:3
+!uses_ink:goto:2
+%%
+; non-ink writing material
+uses_wax:result:Crayon
+uses_lead:result:Colored Pencil
+*:result:indet
+%%
+; cap or no cap
+has_cover:goto:4
+!has_cover:result:Ink Pen
+%%
+; clip on cap or no clip on cap
+has_clip_on_cover:result:Sharpie
+!has_clip_on_cover:result:Marker
