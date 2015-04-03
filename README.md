@@ -38,11 +38,12 @@ If you want to create a condition that is always met, use the special condition 
 If you want to specify a result as indeterminate, i.e. no classification is possible, use the special result `indet`
 
 ```
+has_eyes:goto:4
 ; If the object does not have eyes, we don't know what it is
 !has_eyes:result:indet
 ```
 
-By default, if no condition is true for an object in a step, the result `indet` is returned. 
+By default, if no condition is true for an object in a step, the result `indet` is returned. This is the equivalent of putting the condition `*:result:indet` at the end of each step.
 
 To see an example of a key file, look at `writing.dck`, which is a dichotomous key setup to classify different writing utensils.
 
