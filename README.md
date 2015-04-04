@@ -75,7 +75,7 @@ To see an example of an objects file look at `writing.dco`, which goes along wit
 
 #Dichotomous Interpreter
 
-To run the dichotomous interpreter, run
+To run the Dichotomous Interpreter, run
 
 ```
 ./dichotomous.py key_file.dck objects_file.dco
@@ -93,6 +93,36 @@ The interpreter will iterate through all of the objects and produce a list on st
 5. Object 5: Sharpie
 6. Object 6: Marker
 ```
+
+#Dichotomous Python Script Generator
+
+The dichotomous Python script generator can be run to generate a Python 3 script that acts as a dichotomous key interpreter for a particular file. The only requirement for this generated Python script is Python itself. The script can be run on a machine without the Dichotomous Interpreter.
+
+Even though the script generator is licensed under the MIT license, the output is not subjected to any license by default. You may use it in any way subject to your own terms.
+
+To run the script generator, run
+
+```
+./dichotomous-script-gen.py output_file.py key_file.dck
+```
+
+As with the interpreter, you may have to use another method to invoke the script `dichotomous-script-gen.py`.
+
+If the script generator runs successfully, it will output a python script with the filename you gave it that already has executable permissions. To run a generated script, run
+
+```
+./generated_script_filename.py objects_file.dco
+```
+
+Again, you may have to use another method to invoke the generated python script. 
+
+The output will be formatted the same way the interpeter formats its output.
+
+To see an example of a generated script, view `writing.py`, which was generated from `writing.dck`.
+
+
+
+
 
 
 
